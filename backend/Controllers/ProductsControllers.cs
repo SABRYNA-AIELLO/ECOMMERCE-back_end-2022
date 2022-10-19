@@ -107,12 +107,12 @@ namespace Back_End.Controllers
             product3.Size = "XXXL";
             products.Add(product3);
 
-            Product product4 = new Product(2, "Producto 4", 1000, true);
+            Product product4 = new Product(4, "Producto 4", 1000, true);
             product4.Description = "Buzo canguro con capucha";
             product4.category = new Category(2, "Buzos");
             products.Add(product4);
 
-            Product product5 = new Product(1, "Producto 5", 2000, false);
+            Product product5 = new Product(5, "Producto 5", 2000, false);
             product5.Description = "Remera basica negra";
             product5.category = new Category(1, "Remeras");
             products.Add(product5);
