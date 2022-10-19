@@ -12,16 +12,18 @@ namespace Back_End.Controllers
         [HttpGet("GetErrorExample")]
         public IActionResult GetErrorExample()
         {
+            List<Product> products = new List<Product>();
+
             try
             {
-                Product product = new Product(2, "ropa", 800, false);
-                product.SetNewPrice(750);
+                Product product = new Product(3, "ropa", 1000, false);
+                product.SetNewPrice(850);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            return Ok();
+            return Ok(products);
         }
 
 
