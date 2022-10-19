@@ -22,6 +22,7 @@ namespace Back_End.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+
             }
             return Ok(products);
         }
@@ -70,7 +71,7 @@ namespace Back_End.Controllers
 
 
         [HttpGet("GetProductsByDestacados")]
-        public IActionResult GetProductsByDestacados(bool destacado)
+        public ActionResult GetProductsByDestacados()
         {
             List<Product> products = new List<Product>();
             List<Product> productsDestacado = new List<Product>();
@@ -80,7 +81,7 @@ namespace Back_End.Controllers
 
                 foreach (var product in products)
                 {
-                    if (product.Destacado == destacado)
+                    if (product.Destacado == true)
                     {
                         productsDestacado.Add(product);
                     }
