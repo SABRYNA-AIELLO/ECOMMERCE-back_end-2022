@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HnEv1h5XXfeMNvEyuSxHKHKyOPLS6BOZS+5yzFU8z7IFvVxlUOuU18wTDLQTGVW5b42EFTXJrkkh+i1sghAZZA==",
+  "dgSpecHash": "cH23KDnD5nfIqYIyt1ChG+7IwfLTa+mxmNft/d6BSFzq8ERBMrJncNIObue0p6P3FOXOGPLm/A4ZRCAFpMzs1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\Desktop\\ECOMMERCE-backend-2022-main\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\ITLM 2 2DO CUATRI\\Portales y Comercio Electrónico\\ECOMMERCE-back_end-2022\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

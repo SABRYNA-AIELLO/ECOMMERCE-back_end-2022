@@ -25,3 +25,30 @@ C:\Users\usuario\Desktop\ECOMMERCE-backend-2022-main\backend\obj\Debug\net6.0\re
 C:\Users\usuario\Desktop\ECOMMERCE-backend-2022-main\backend\obj\Debug\net6.0\backend.pdb
 C:\Users\usuario\Desktop\ECOMMERCE-backend-2022-main\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
 C:\Users\usuario\Desktop\ECOMMERCE-backend-2022-main\backend\obj\Debug\net6.0\ref\backend.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\appsettings.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\backend.exe
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\backend.deps.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\backend.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\backend.pdb
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\refint\backend.dll
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.pdb
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+C:\Users\usuario\Desktop\ITLM 2 2DO CUATRI\Portales y Comercio Electrónico\ECOMMERCE-back_end-2022\backend\obj\Debug\net6.0\ref\backend.dll

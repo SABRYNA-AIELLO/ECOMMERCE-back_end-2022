@@ -14,8 +14,8 @@ namespace Back_End.Controllers
         {
             try
             {
-                Product product = new Product(1, "ropa", 100, false);
-                product.SetNewPrice(50);
+                Product product = new Product(2, "ropa", 800, false);
+                product.SetNewPrice(750);
             }
             catch (Exception ex)
             {
@@ -23,6 +23,8 @@ namespace Back_End.Controllers
             }
             return Ok();
         }
+
+
         [HttpGet("GetProductsHome")]
         public ActionResult GetProductsHome()
         {
@@ -101,7 +103,7 @@ namespace Back_End.Controllers
             product1.category = new Category(1, "Remeras");
             products.Add(product1);
 
-            Product product2 = new Product(2, "Producto 2", 500, true);
+            Product product2 = new Product(2, "Producto 2", 800, true);
             product2.Description = "Buzo canguro sin capucha";
             product2.category = new Category(2, "Buzos");
             products.Add(product2);
@@ -115,10 +117,10 @@ namespace Back_End.Controllers
             product4.category = new Category(2, "Buzos");
             products.Add(product4);
 
-            Product product5 = new Product(1, "Producto 5", 1000, false);
+            Product product5 = new Product(1, "Producto 5", 2000, false);
             product5.Description = "Remera basica negra";
             product5.category = new Category(1, "Remeras");
-            products.Add(product1);
+            products.Add(product5);
 
             return products;
         }
