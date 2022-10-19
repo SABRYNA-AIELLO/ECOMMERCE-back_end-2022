@@ -78,15 +78,7 @@ namespace Back_End.Controllers
             try
             {
                 products = GetProducts();
-
-                foreach (var product in products)
-                {
-                    if (product.Destacado == true)
-                    {
-                        productsDestacado.Add(product);
-                    }
-                }
-
+                foreach (var product in products) { if (product.Destacado ) productsDestacado.Add(product);}
             }
             catch (Exception ex)
             {
