@@ -1,5 +1,6 @@
 ﻿using Back_End.Models;
 using Microsoft.AspNetCore.Mvc;
+using Back_End.Repositories;
 
 namespace Back_End.Controllers
 {
@@ -34,7 +35,8 @@ namespace Back_End.Controllers
             List<Product> products = new List<Product>();
             try
             {
-                products = GetProducts();
+                ProductRepository repo = new ProductRepository();
+                products = repo.GetProducts();
             }
             catch (Exception ex)
             {
@@ -52,7 +54,8 @@ namespace Back_End.Controllers
             List<Product> productsByCategory = new List<Product>();
             try
             {
-                products = GetProducts();
+                ProductRepository repo = new ProductRepository();
+                products = repo.GetProducts();
                 foreach (var product in products)
                 {
                     if (product.category.idCategory == idCategory)
@@ -73,12 +76,14 @@ namespace Back_End.Controllers
         [HttpGet("GetProductsByDestacados")]
         public ActionResult GetProductsByDestacados()
         {
-            List<Product> products = new List<Product>();
+            List<Product> productsAux = new List<Product>();
             List<Product> productsDestacado = new List<Product>();
             try
             {
-                products = GetProducts();
-                foreach (var product in products) { if (product.Destacado ) productsDestacado.Add(product);}
+
+                ProductRepository repo = new ProductRepository();
+                productsAux = repo.GetProducts();
+                foreach (var product in productsAux) { if (product.Destacado) productsDestacado.Add(product);}
             }
             catch (Exception ex)
             {
@@ -87,41 +92,40 @@ namespace Back_End.Controllers
             return Ok(productsDestacado);
         }
 
-
-
-        private List<Product> GetProducts()
+        [HttpPost("AddProductToCart")] //Crear
+        public IActionResult AddProductToCart(int idProducto, int cantidad)
         {
-            List<Product> products = new List<Product>();
-
-            Product product1 = new Product(1, "Producto 1", 3000, false);
-            product1.Description = "Remera basica blanca";
-            product1.category = new Category(1, "Remeras");
-            products.Add(product1);
-
-            Product product2 = new Product(2, "Producto 2", 800, true);
-            product2.Description = "Buzo canguro sin capucha";
-            product2.category = new Category(2, "Buzos");
-            products.Add(product2);
-
-            Product product3 = new Product(3, "Producto 3", 1000, false);
-            product3.Size = "XXXL";
-            products.Add(product3);
-
-            Product product4 = new Product(4, "Producto 4", 1000, true);
-            product4.Description = "Buzo canguro con capucha";
-            product4.category = new Category(2, "Buzos");
-            products.Add(product4);
-
-            Product product5 = new Product(5, "Producto 5", 2000, false);
-            product5.Description = "Remera basica negra";
-            product5.category = new Category(1, "Remeras");
-            products.Add(product5);
-
-            return products;
+            try
+            {
+                CartRepository.AddProductToCart(idProducto, cantidad);
+                return Ok("El producto se agrego con exito");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
+
+        [HttpGet("GetCart")]
+        public IActionResult GetCart()
+        {
+            try
+            {
+                return Ok(CartRepository.GetCart().items);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+
     }
 }
 
-        //shif+F9//
-        //comentar en blocke: control+k+c//
-        //descomentar en blocker: control+k+u//
+
+
+//shif+F9//
+//comentar en blocke: control+k+c//
+//descomentar en blocker: control+k+u//
