@@ -17,7 +17,7 @@ namespace Back_End.Controllers
 
             try
             {
-                Product product = new Product(3, "ropa", 1000, false);
+                Product product = new Product(3, "ropa", 1000, false, false);
                 product.SetNewPrice(850);
             }
             catch (Exception ex)
@@ -119,6 +119,29 @@ namespace Back_End.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+        [HttpGet("GetProductsByBanner")]
+        public ActionResult GetProductsByBanner()
+        {
+            List<Product> productsAux = new List<Product>();
+            List<Product> productsBanner = new List<Product>();
+            try
+            {
+
+                ProductRepository repo = new ProductRepository();
+                productsAux = repo.GetProducts();
+                foreach (var product in productsAux) { if (product.Banner) productsBanner.Add(product); }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok(productsBanner);
+        }
+
+
+
 
 
     }
