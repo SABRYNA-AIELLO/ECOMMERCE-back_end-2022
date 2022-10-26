@@ -28,13 +28,14 @@
         {
             if (newPrice < (_originalPrice * 0.90))
             {
-                throw new Exception("No se puede hacer mas de un 10 % de descuento");
+                throw new Exception("No se puede hacer mas de un 10 % de descuento") ;
             }
             else
             {
                 throw new Exception("Descuento otorgado");
             }
             _originalPrice = newPrice;
+
         }
 
     }

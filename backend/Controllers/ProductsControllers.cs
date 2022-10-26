@@ -49,7 +49,7 @@ namespace Back_End.Controllers
 
         [HttpGet("GetProductsByCategory")]
         public IActionResult GetProductsByCategory(int idCategory)
-           {
+        {
             List<Product> products = new List<Product>();
             List<Product> productsByCategory = new List<Product>();
             try
@@ -59,7 +59,7 @@ namespace Back_End.Controllers
                 foreach (var product in products)
                 {
                     if (product.category.idCategory == idCategory)
-                    { 
+                    {
                         productsByCategory.Add(product);
                     }
                 }
@@ -83,7 +83,7 @@ namespace Back_End.Controllers
 
                 ProductRepository repo = new ProductRepository();
                 productsAux = repo.GetProducts();
-                foreach (var product in productsAux) { if (product.Destacado) productsDestacado.Add(product);}
+                foreach (var product in productsAux) { if (product.Destacado) productsDestacado.Add(product); }
             }
             catch (Exception ex)
             {
@@ -92,7 +92,28 @@ namespace Back_End.Controllers
             return Ok(productsDestacado);
         }
 
-        [HttpPost("AddProductToCart")] //Crear
+
+        [HttpGet("GetProductsByBanner")]
+        public ActionResult GetProductsByBanner()
+        {
+            List<Product> productsAux = new List<Product>();
+            List<Product> productsBanner = new List<Product>();
+            try
+            {
+
+                ProductRepository repo = new ProductRepository();
+                productsAux = repo.GetProducts();
+                foreach (var product in productsAux) { if (product.mostrarEnHome) productsBanner.Add(product); }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok(productsBanner);
+        }
+
+
+        [HttpPost("AddProductToCart")] //Post -> Crear
         public IActionResult AddProductToCart(int idProducto, int cantidad)
         {
             try
@@ -119,31 +140,7 @@ namespace Back_End.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-
-        [HttpGet("GetProductsByBanner")]
-        public ActionResult GetProductsByBanner()
-        {
-            List<Product> productsAux = new List<Product>();
-            List<Product> productsBanner = new List<Product>();
-            try
-            {
-
-                ProductRepository repo = new ProductRepository();
-                productsAux = repo.GetProducts();
-                foreach (var product in productsAux) { if (product.mostrarEnHome) productsBanner.Add(product); }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            return Ok(productsBanner);
-        }
-
-
-
-
-
+    
     }
 }
 
