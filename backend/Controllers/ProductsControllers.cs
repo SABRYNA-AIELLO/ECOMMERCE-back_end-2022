@@ -131,7 +131,7 @@ namespace Back_End.Controllers
 
                 ProductRepository repo = new ProductRepository();
                 productsAux = repo.GetProducts();
-                foreach (var product in productsAux) { if (product.Banner) productsBanner.Add(product); }
+                foreach (var product in productsAux) { if (product.mostrarEnHome) productsBanner.Add(product); }
             }
             catch (Exception ex)
             {

@@ -28,7 +28,7 @@ namespace Back_End.Repositories
             products.Add(product4);
 
             Product product5 = new Product(5, "Producto 5", 2000, false, true);
-            product5.Description = "Remera roja Navidad";
+            product5.Description = "Pantalon roja Navidad";
             product5.category = new Category(3, "Navidad");
             products.Add(product5);
 
