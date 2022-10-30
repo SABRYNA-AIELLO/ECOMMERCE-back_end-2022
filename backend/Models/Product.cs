@@ -1,8 +1,10 @@
-﻿namespace Back_End.Models
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Back_End.Models
 {
     public class Product
     {
-        private double _originalPrice;       
+        private double _originalPrice;
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -28,7 +30,7 @@
         {
             if (newPrice < (_originalPrice * 0.90))
             {
-                throw new Exception("No se puede hacer mas de un 10 % de descuento") ;
+                throw new Exception("No se puede hacer mas de un 10 % de descuento");
             }
             else
             {
@@ -38,5 +40,24 @@
 
         }
 
+      
     }
 }
+
+//   namespace backend.Controllers
+//   {
+//        public int SetNewCantidad(int newCantidad)
+//   {
+//    if (newCantidad = (cantidad + cantidad))
+//      {
+//            return (newCantidad);
+//          
+//        }
+//        else
+//        {
+//            return cantidad;
+//        }
+//        cantidad = newCantidad;
+//
+//    }
+//}
