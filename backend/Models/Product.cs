@@ -44,20 +44,3 @@ namespace Back_End.Models
     }
 }
 
-//   namespace backend.Controllers
-//   {
-//        public int SetNewCantidad(int newCantidad)
-//   {
-//    if (newCantidad = (cantidad + cantidad))
-//      {
-//            return (newCantidad);
-//          
-//        }
-//        else
-//        {
-//            return cantidad;
-//        }
-//        cantidad = newCantidad;
-//
-//    }
-//}
