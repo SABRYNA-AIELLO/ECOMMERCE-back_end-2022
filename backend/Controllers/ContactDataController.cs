@@ -16,14 +16,14 @@ namespace backend.Controllers
                 footer.direccion = "Tucuman 752";
                 footer.horario = "8 a 16hs";
                 footer.telefono = "6319-1584";
-                 return Ok(footer);
+                return Ok(footer);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
 
             }
-           
+
         }
     }
 }
