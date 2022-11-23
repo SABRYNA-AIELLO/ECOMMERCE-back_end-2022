@@ -7,7 +7,7 @@ namespace backend.Controllers
     public class HomeController : Controller
     {
         [HttpGet("GetHomeInfo")]
-        public IActionResult GetHomeInfo()
+        public IActionResult GetHomeInfo(bool Consulta )
         {
             try
             {
@@ -17,11 +17,12 @@ namespace backend.Controllers
                 homeInfo.header.Nombre = "Tienda Ecommerce";
                 homeInfo.header.Moneda = "Arg $ / U$S / EUR €";
                 homeInfo.header.Help = "ventas@tienda.com / administracion@tienda.com";
-
-                homeInfo.footer.direccion = "Tucuman 752";
-                homeInfo.footer.horario = "8 a 16hs";
-                homeInfo.footer.telefono = "6319-1584";
-
+                if (Consulta)
+                {
+                    homeInfo.footer.direccion = "Tucuman 752";
+                    homeInfo.footer.horario = "8 a 16hs";
+                    homeInfo.footer.telefono = "6319-1584";
+                }
                 return Ok(homeInfo);
             }
             catch (Exception ex)
