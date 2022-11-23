@@ -19,6 +19,8 @@ namespace Back_End.Repositories
             products.Add(product2);
 
             Product product3 = new Product(3, "Producto 3", 1000, false, false);
+            product3.Description = "Pantalon sin cierre";
+            product3.category = new Category(4, "Pantalon");
             product3.Size = "XXXL";
             products.Add(product3);
 
